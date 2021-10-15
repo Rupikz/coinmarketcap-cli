@@ -13,3 +13,11 @@
 1. Переименовать файл **.example.env** в **.env**
 2. Указать свой апи-ключ от _CoinMarketCapApi_ в переменную **API_COINMARKETCAP_KEY**
 3. Установить зависимости проекта командой `yarn`
+4. Сбилдить проект командой `yarn build`
+5. Запустить командой `node dist/coinmarketcap.js`
+
+## Примеры работы
+
+1. Конвертировать 1 BTC в ETH: `node dist/coinmarketcap.js conversion BTC ETH 1`
+2. Поменять местами валюту: `node dist/coinmarketcap.js conversion BTC ETH 1 -r`
+3. Проверить существование валюты: `node dist/coinmarketcap.js currency BTC`
